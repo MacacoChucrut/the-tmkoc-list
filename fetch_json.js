@@ -26,7 +26,7 @@ export async function fetchJSON() {
     const positions = await fetchList();
     return await Promise.all(
         list.map(async (path, rank) => {
-            const levelResult = await fetch(`./levels/${path}.json`);
+            const fetchJSON = await fetch(`./levels/${path}.json`);
             try {
                 const level = await fetchList();
 
@@ -38,7 +38,7 @@ export async function fetchJSON() {
 
             <img src="${getThumbnailFromId(item.verification)}">
         <div class="card-text">
-            <h3>${item.name}</h3>
+            <h3>${rank} - ${item.name}</h3>
             <h4><strong>Creator:</strong> ${item.creator}</h4>
             <h4><strong>Verifier:</strong> ${item.verifier}</h4>
         </div>
