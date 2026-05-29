@@ -25,3 +25,7 @@
 .list .card h3 {
     font-size: 2rem;
 }
+
+.list .card h4 {
+    color: #ccc;
+}
