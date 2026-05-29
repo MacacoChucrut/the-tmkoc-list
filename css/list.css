@@ -10,8 +10,13 @@
 
 .list .card img {
     border-radius: 1rem;
+    box-shadow: 0 0 1rem #000;
 }
 
 .list .card .card-text {
     margin-left: 3rem;
+}
+
+.list .card h3 {
+    font-size: 3rem;
 }
