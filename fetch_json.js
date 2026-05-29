@@ -31,7 +31,7 @@ export async function fetchJSON() {
 
             <img src="${getThumbnailFromId(item.verification)}">
         <div class="card-text">
-            <h3>${rank} - ${item.name}</h3>
+            <h3>.rank - ${item.name}</h3>
             <h4><strong>Creator:</strong> ${item.creator}</h4>
             <h4><strong>Verifier:</strong> ${item.verifier}</h4>
         </div>
