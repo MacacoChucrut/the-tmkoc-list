@@ -8,12 +8,18 @@
     display: flex;
 }
 
+.list .card:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
 .list .card img {
     border-radius: 1rem;
     box-shadow: 0 0 5px #000;
 }
 
 .list .card .card-text {
+    align-items: center;
     margin-left: 3rem;
 }
 
