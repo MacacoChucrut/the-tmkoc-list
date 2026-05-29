@@ -23,13 +23,6 @@ export async function fetchJSON() {
         responses.map(r => r.json())
     );
 
-    const positions = await fetchList();
-    return await Promise.all(
-        list.map(async (path, rank) => {
-            const fetchJSON = await fetch(`./levels/${path}.json`);
-            try {
-                const level = await fetchList();
-
     data.forEach(item => {
 
         const card = document.createElement("div");
