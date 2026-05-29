@@ -23,9 +23,6 @@ export async function fetchJSON() {
         responses.map(r => r.json())
     );
 
-    const fullCard = document.createElement("div");
-    fullCard.className = "full-card";
-
     data.forEach(item => {
 
         const card = document.createElement("div");
@@ -41,7 +38,5 @@ export async function fetchJSON() {
         `;
         
         list.appendChild(card);
-        
-        list.appendChild(fullCard);
     });
 }
