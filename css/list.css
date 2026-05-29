@@ -1,5 +1,5 @@
 .list .card {
-    background: #000;
+    background: #fff;
     box-shadow: 2px 2px 2px #000;
     border-radius: 1rem;
     padding: 1rem 0 1rem 1rem;
@@ -11,4 +11,8 @@
 
 .list .card img {
     border-radius: 1rem;
+}
+
+.list .card .card-text {
+    margin-left: 3rem;
 }
