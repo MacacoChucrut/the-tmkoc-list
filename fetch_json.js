@@ -29,7 +29,9 @@ export async function fetchJSON() {
         card.className = "card";
         card.innerHTML = `
 
-            <a src="${item.verification}><img src="${getThumbnailFromId(item.verification)}"></a>
+            <a href="${item.verification}>
+            <img src="${getThumbnailFromId(item.verification)}">
+            </a>
         <div class="card-text">
             <h3>${item.name}</h3>
             <h4><strong>Creator:</strong> ${item.creator}</h4>
