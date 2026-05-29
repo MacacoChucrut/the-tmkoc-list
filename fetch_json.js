@@ -1,8 +1,9 @@
 import { getThumbnailFromId } from "./utils.js";
 
 const files = [
-    "levels/tmkocx.json",
-    "levels/tmkoc.json",
+    "./levels/tmkocx.json",
+    "./levels/tmkoc.json",
+    "./levels/tmkoc_og.json",
 ];
 
 export async function fetchJSON() {
