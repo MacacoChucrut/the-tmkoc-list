@@ -9,8 +9,13 @@
 }
 
 .list .card:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
+    transform: scale(1.02);
+    transition: 0.25s;
+}
+
+.list .card:not(:hover) {
+    transform: scale(1);
+    transition: 0.5s;
 }
 
 .list .card img {
@@ -27,6 +32,7 @@
 }
 
 .list .card h4 {
-    color: #888;
+    color: #555;
     font-size: 1rem;
+    font-weight: 600;
 }
