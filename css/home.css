@@ -1,5 +1,26 @@
-.home img {
-    width: 33%;
-    height: 30rem;
-    align-items: center;
+.home .home-gifs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home .home-gifs img {
+    width: 25%;
+    height: 20rem;
+}
+
+.home .home-gifs-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home .home-gifs-2 img {
+    width: 25%;
+    height: 20rem;
+    margin: 2rem 0 4rem 0;
+}
+
+.home li {
+    font-size: 1.25rem;
+    margin: 1rem auto;
+    width: 50%;
 }
