@@ -33,7 +33,7 @@ export function renderHome(content) {
     <li>The recording must have a previous attempt showing the death animation before the completion, unless the completion is on the first attempt.</li>
     <li>The recording must show the "Level Complete!" screen at the end.</li>
     <li>Do NOT use major secret ways of bug routes</li>
-    <li>You may not use any disallowed mods. A list of what we allow and don't allow can be found <a href="https://docs.google.com/spreadsheets/d/1M4vXMxHcYwtstB6SD9r4lPFotUXhz3IL9D_3JX8tjyE/edit?gid=1204643762#gid=1204643762">here.</a></li>
+    <li>You may not use any disallowed mods. A list of what we allow and don't allow can be found <a href="https://docs.google.com/spreadsheets/d/1M4vXMxHcYwtstB6SD9r4lPFotUXhz3IL9D_3JX8tjyE/edit?gid=1204643762#gid=1204643762" target="_blank">here.</a></li>
     </ol>
     
     <div class="home-gifs-2">
