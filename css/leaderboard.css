@@ -1,0 +1,49 @@
+.leaderboard {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.leaderboard-left {
+    width: 25%;
+}
+
+.player-card {
+    padding: 1px 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 4px #000;
+}
+
+.player-card:hover {
+    background: #ddd;
+    cursor: pointer;
+    transition: 0.1s;
+    scale: 1.02;
+}
+
+.player-card:not(:hover) {
+    transition: 0.3s;
+}
+
+.leaderboard-right {
+    margin-left: 3rem;
+}
+
+.leaderboard-right h4 {
+    margin: 0 auto;
+    font-size: 3rem;
+}
+
+.leaderboard-right h5 {
+    margin: 2rem auto;
+    font-size: 2rem;
+}
+
+#player-verifications {
+    font-size: 1.5rem;
+}
+
+#player-levels {
+    font-size: 1.5rem
+}
