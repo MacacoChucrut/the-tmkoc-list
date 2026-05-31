@@ -1,1 +1,43 @@
+.level-info {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    align-items: center;
+}
 
+.level-info iframe {
+    aspect-ratio: 16 / 9;
+    flex: 1;
+    border: none;
+    box-shadow: 0 0 1rem #000;
+    border-radius: 1rem;
+}
+
+.level-info h3 {
+    margin-left: 4rem;
+    font-weight: 500;
+}
+
+.level-text {
+    width: 50%;
+}
+
+.level hr {
+    width: 60%;
+    color: #fff;
+}
+
+.record-player {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.record-player h4 {
+    font-size: 1rem;
+    flex: 1;
+}
+
+#records {
+    margin-bottom: 4rem;
+}
