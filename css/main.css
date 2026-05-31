@@ -3,7 +3,7 @@ body {
 }
 
 header {
-  background: linear-gradient(90deg, #e70, #fff, #bbf, #fff, #080);
+  background: linear-gradient(90deg, #e70, #fff, #aaf, #fff, #080);
   width: 100%;
   display: flex;
   position: fixed;
@@ -11,6 +11,7 @@ header {
   left: 0;
   height: 5rem;
   box-shadow: 0 0 1rem #000;
+  z-index: 1;
 }
 
 header h1 {
@@ -27,6 +28,7 @@ header a {
     display: flex;
     text-decoration: none;
     align-items: center;
+    user-select: none;
 }
 
 header img {
@@ -45,12 +47,11 @@ header img {
 }
 
 .header-buttons a:hover{
-    transform: scale(1.1);
     transition: 0.1s ease;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .header-buttons a:not(:hover) {
-    transform: scale(1);
     transition: 0.3s ease;
 }
 
