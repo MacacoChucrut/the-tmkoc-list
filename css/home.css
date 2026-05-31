@@ -1,26 +1,30 @@
-.home .home-gifs {
+.home-gifs {
     display: flex;
     justify-content: space-around;
 }
 
-.home .home-gifs img {
+.home-gifs img {
     width: 25%;
     height: 20rem;
+    box-shadow: 0 0 1rem #000;
+    border-radius: 1rem;
 }
 
-.home .home-gifs-2 {
+.home-gifs-2 {
     display: flex;
     justify-content: space-around;
 }
 
-.home .home-gifs-2 img {
+.home-gifs-2 img {
     width: 25%;
     height: 20rem;
+    box-shadow: 0 0 1rem #000;
+    border-radius: 1rem;
     margin: 2rem 0 4rem 0;
 }
 
 .home li {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin: 1rem auto;
-    width: 50%;
+    width: 60%;
 }
