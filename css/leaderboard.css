@@ -28,6 +28,7 @@
 
 .leaderboard-right {
     margin-left: 3rem;
+    transition: 0.2s;
 }
 
 .leaderboard-right h4 {
