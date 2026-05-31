@@ -1,4 +1,5 @@
 import { renderHome } from "./pages/home.js";
+import { renderLevel } from "./pages/level.js";
 import { renderList } from "./pages/list.js";
 import { renderPacks } from "./pages/packs.js";
 import { renderLeaderboard } from "./pages/leaderboard.js";
@@ -13,6 +14,11 @@ function router() {
     if (route === "#list") {
         renderList(content);
         fetchJSON();
+    }
+
+    else if (route.startsWith("#level/")) {
+        const id = route.split("/")[1];
+        renderLevel(content, id);
 
     } else if (route === "#packs") {
         renderPacks(content);
