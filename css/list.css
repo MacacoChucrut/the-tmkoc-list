@@ -3,18 +3,19 @@
     border-radius: 1rem;
     padding: 1rem 0 1rem 1rem;
     margin: 3rem auto;
-    width: 80%;
+    width: 70%;
     align-items: center;
     display: flex;
 }
 
 .list .card:hover {
-    transform: scale(1.02);
+    scale: 1.02;
     transition: 0.25s;
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .list .card:not(:hover) {
-    transform: scale(1);
     transition: 0.5s;
 }
 
@@ -23,8 +24,17 @@
     box-shadow: 0 0 5px #000;
 }
 
+.list .card img:hover {
+    scale: 1.04;
+    transition: 0.2s;
+}
+
+.list .card img:not(:hover) {
+    transition: 0.5s;
+}
+
 .list .card .card-text {
-    margin-left: 3rem;
+    margin: 0 0 1rem 2rem;
 }
 
 .list .card h3 {
@@ -34,5 +44,8 @@
 .list .card h4 {
     color: #555;
     font-size: 1rem;
-    font-weight: 600;
+}
+
+#list {
+    margin-bottom: 8rem;
 }
