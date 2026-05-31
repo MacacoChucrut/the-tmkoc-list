@@ -15,6 +15,7 @@ export function renderHome(content) {
     <ol>
     <li>Levels must have atleast one gameplay parts from the start of <strong>tmkoc OG.</strong></li>
     <li>Level names must contain references to the show, such as character names, or the show itself.</li>
+    <li>Levels must use the same background as in <strong>tmkoc OG.</strong></li>
     <li>Levels must be at least 30 seconds long.</li>
     <li>2 player levels are not allowed.</li>
     <li>Copying parts from a level outside the list is not allowed.</li>
