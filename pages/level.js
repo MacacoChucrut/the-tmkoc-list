@@ -40,6 +40,7 @@ export async function renderLevel(content, id) {
     <h3><strong>Creator(s):</strong> ${item.creator}</h3>
     <h3><strong>Verifier:</strong> ${item.verifier}</h3>
     <h3><strong>ID:</strong> ${item.id}</h3>
+    <h3><strong>Description:</strong> ${item.description}</h3>
     <h3><strong>Packs:</strong> ${levelPacks.length > 0
     ? levelPacks.map(pack => pack.name).join(", ")
     : "Not included in any pack :("}</h3>
