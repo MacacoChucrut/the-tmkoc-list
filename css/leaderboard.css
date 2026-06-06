@@ -1,7 +1,8 @@
 .leaderboard {
     display: flex;
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
+    gap: 2rem;
 }
 
 .leaderboard-left {
@@ -27,7 +28,8 @@
 }
 
 .leaderboard-right {
-    margin-left: 3rem;
+    margin-left: 4rem;
+    width: 100%;
 }
 
 .leaderboard-right h4 {
@@ -36,14 +38,10 @@
 }
 
 .leaderboard-right h5 {
-    margin: 2rem auto;
+    margin: 3rem 0 1rem;
     font-size: 2rem;
 }
 
-#player-verifications {
+.leaderboard-right p {
     font-size: 1.5rem;
-}
-
-#player-levels {
-    font-size: 1.5rem
 }

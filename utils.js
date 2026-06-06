@@ -44,7 +44,7 @@ export function getLevelPoints(position, totalLevels) {
 
 // LEADERBOARD ----------------------------------------------------------------------------------------------------
 
-export function generateLeaderboard(levels) {
+export function generateLeaderboard(levels, packs = []) {
 
     const leaderboard = {};
 
@@ -64,12 +64,14 @@ export function generateLeaderboard(levels) {
             leaderboard[player] = {
                 points: 0,
                 completions: [],
-                verifications: []
+                verifications: [],
+                packs: []
             };
         }
 
         leaderboard[player].points += points;
         leaderboard[player].completions.push({
+            id: level.id,
             level: level.name,
             points,
             position: index + 1
@@ -85,18 +87,70 @@ export function generateLeaderboard(levels) {
             leaderboard[player] = {
                 points: 0,
                 completions: [],
-                verifications: []
+                verifications: [],
+                packs: []
             };
         }
         
         leaderboard[player].points += points;
         leaderboard[player].verifications.push({
+            id: level.id,
             level: level.name,
             points,
             position: index + 1
         });
     }
 });
+
+// PACKS ---------------------------------------------------------
+
+packs.forEach(pack => {
+    
+    const packPoints = Math.round(
+        
+        pack.levels.reduce(
+
+            (sum, levelId) => {
+                const levelIndex =
+                levels.findIndex(level => String(level.id) === String(levelId));
+
+                if (levelIndex === -1) return sum;
+                
+                return sum +
+                getLevelPoints(levelIndex + 1, levels.length);
+            }, 0) * 0.5
+        );
+        
+        Object.keys(leaderboard)
+        .forEach(player => {
+            
+            const completedPack = pack.levels.every(levelId => {
+                
+                const completed = leaderboard[player]
+                .completions
+                .some(completion => String(completion.id) === String(levelId));
+                
+                const verified = leaderboard[player]
+                .verifications
+                .some(verification => String(verification.id) === String(levelId));
+                
+                return completed || verified;
+            });
+            
+            if (!completedPack) return;
+            
+            leaderboard[player]
+            .points += packPoints;
+                
+            leaderboard[player]
+            .packs.push({
+                name: pack.name,
+                description: pack.description,
+                points: packPoints,
+                levels: pack.levels.length
+            });
+        });
+    });
 
     return Object.entries(leaderboard)
         .sort((a, b) =>

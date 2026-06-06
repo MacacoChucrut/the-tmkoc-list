@@ -1,11 +1,47 @@
-.packs h3 {
-    text-align: center;
+.packs {
+    display: flex;
+    margin: 0 auto;
+    width: 85%;
+    gap: 2rem;
+}
+
+.packs-left {
+    width: 20%;
+}
+
+.pack-card {
+    padding: 1px 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 4px #000;
+}
+
+.pack-card:hover {
+    background: #ddd;
+    cursor: pointer;
+    transition: 0.1s;
+    scale: 1.02;
+}
+
+.pack-card:not(:hover) {
+    transition: 0.3s;
+}
+
+.packs-right {
+    margin-left: 4rem;
+    width: 100%;
+}
+
+.packs-right h4 {
+    margin: 0 auto;
+    font-size: 3rem;
+}
+
+.packs-right h5 {
+    margin: 3rem 0 1rem;
     font-size: 2rem;
 }
 
-.packs img {
-    display: flex;
-    margin: 0 auto;
-    box-shadow: 0 0 1rem #000;
-    border-radius: 1rem;
+.packs-right p {
+    font-size: 1.5rem;
 }

@@ -4,8 +4,6 @@ import { renderList } from "./pages/list.js";
 import { renderPacks } from "./pages/packs.js";
 import { renderLeaderboard } from "./pages/leaderboard.js";
 
-import { fetchJSON } from "./fetch_json.js";
-
 const content = document.getElementById("content");
 
 function router() {
@@ -13,7 +11,6 @@ function router() {
 
     if (route === "#list") {
         renderList(content);
-        fetchJSON();
     }
 
     else if (route.startsWith("#level/")) {

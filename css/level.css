@@ -1,7 +1,7 @@
 .level-info {
     display: flex;
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
     align-items: center;
 }
 
@@ -11,6 +11,7 @@
     border: none;
     box-shadow: 0 0 1rem #000;
     border-radius: 1rem;
+    width: 50%;
 }
 
 .level-info h3 {
@@ -22,20 +23,34 @@
     width: 50%;
 }
 
-.level hr {
-    width: 60%;
-    color: #fff;
+#records a {
+    text-decoration: none;
+    color: black;
 }
 
 .record-player {
     display: flex;
+    justify-content: center;
     width: 50%;
-    margin: 0 auto;
+    margin: 1rem auto;
+    box-shadow: 0 0 4px #000;
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+
+.record-player:hover {
+    scale: 1.02;
+    transition: 0.1s;
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.record-player:not(:hover) {
+    transition: 0.3s;
 }
 
 .record-player h4 {
-    font-size: 1rem;
-    flex: 1;
+    font-size: 1.2rem;
 }
 
 #records {
